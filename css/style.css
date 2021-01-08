@@ -57,11 +57,11 @@ main {
     margin-top: 50px;
 }
 
-/** -- SEARCH SECTION -- **/
-#search {
+section {
     margin-bottom: 30px;
 }
 
+/** -- SEARCH SECTION -- **/
 .icon-wrap {
     width: 420px;
     display: flex;
@@ -75,6 +75,8 @@ main {
     padding-left: 20px;
     border: none;
     border: 1px solid #F2F2F2;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 #location, #search-input, #search-button {
@@ -115,13 +117,13 @@ main {
 .filters-icon {
     position: relative;
     left: 20px;
-    width: 50px;
+    width: 40px;
     height: 40px;
     display: flex!important;
     justify-content: center;
     align-items: center;
     color: #0065FC;
-    border-radius: 30px;
+    border-radius: 50%;
     background-color: #DEEBFF;
 }
 
@@ -141,4 +143,21 @@ main {
 .filters-button:hover {
     background-color: #F2F2F2;
     transition: all 0.2s ease-in;
+}
+
+/** -- INFO -- **/
+#info {
+    font-size: 12px;
+}
+
+#info > i {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #0065FC;
 }
