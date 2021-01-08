@@ -7,6 +7,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
@@ -20,11 +21,42 @@
 
         <img src="img/logo/Reservia.svg" id="logo" />
     </header>
+
     <main>
         <section id="search">
             <h1 id="search-title">Trouvez votre hébergement pour des vacances de rêves</h1>
             <p id="search-description">En plein centre ville ou en pleine nature</p>
-        </section>    
+            
+            <div class="icon-wrap">
+                <i class="fas fa-map-marker-alt" id="location"></i><input type="text" id="search-input" value="Marseille, France" />
+                <button type="button" id="search-button">Rechercher</button>
+            </div>
+        </section>
+
+        <section id="filters">
+            <h3 id="filters-title">Filtres</h3>
+
+            <div class="filters-wrap">
+                <i class="fas fa-money-bill-wave filters-icon"></i>
+                <button type="button" class="filters-button">Économique</button>
+            </div>
+
+            <div class="filters-wrap">
+                <i class="fas fa-money-bill-wave filters-icon"></i>
+                <button type="button" class="filters-button">Familiale</button>
+            </div>
+
+            <div class="filters-wrap">
+                <i class="fas fa-money-bill-wave filters-icon"></i>
+                <button type="button" class="filters-button">Romantique</button>
+            </div>
+
+            <div class="filters-wrap">
+                <i class="fas fa-money-bill-wave filters-icon"></i>
+                <button type="button" class="filters-button">Animaux autorisés</button>
+            </div>
+
+        </section>
     </main>
 </body>
 </html>
