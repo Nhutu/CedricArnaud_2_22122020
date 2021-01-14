@@ -170,10 +170,16 @@ section, .section-title {
 }
 
 /** -- HOST -- **/
+#host-popular-flex {
+    display: flex;
+    flex-direction: row;
+}
+
 #host {
     width: 880px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: 40px;
 }
 
 #host-flex {
@@ -187,7 +193,7 @@ section, .section-title {
     width: 246px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px #e0e0e0;
+    box-shadow: 1px 1px 10px #cacaca;
     padding: 5px;
     margin-bottom: 30px;
 }
@@ -222,4 +228,64 @@ section, .section-title {
 
 .host-stars-gray {
     color: #F2F2F2;
+}
+
+#show-more {
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#show-more:hover {
+    color: #0065FC;
+}
+
+/** -- POPULAR HOSTS -- **/
+#host-popular {
+    width: 420px;
+    height: 590px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+#host-title-flex {
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.popular-place {
+    width: 343px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #cacaca;
+}
+
+.popular-description {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.popular-img {
+    width: 40%;
+    height: 90%;
+    border-radius: 20px 0 0 20px;
+}
+
+.popular-stars {
+    line-height: 100px;
 }
