@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -43,25 +44,28 @@
         <section id="filters">
             <h3 id="filters-title">Filtres</h3>
 
-            <div class="filters-wrap">
-                <i class="fas fa-money-bill-wave filters-icon"></i>
-                <button type="button" class="filters-button">Économique</button>
+            <div id="filters-container">
+                <div class="filters-wrap">
+                    <i class="fas fa-money-bill-wave filters-icon"></i>
+                    <button type="button" class="filters-button">Économique</button>
+                </div>
+    
+                <div class="filters-wrap">
+                    <i class="fas fa-child filters-icon"></i>
+                    <button type="button" class="filters-button">Familiale</button>
+                </div>
+    
+                <div class="filters-wrap">
+                    <i class="fas fa-heart filters-icon"></i>
+                    <button type="button" class="filters-button">Romantique</button>
+                </div>
+    
+                <div class="filters-wrap">
+                    <i class="fas fa-dog filters-icon"></i>
+                    <button type="button" class="filters-button">Animaux autorisés</button>
+                </div>
             </div>
-
-            <div class="filters-wrap">
-                <i class="fas fa-child filters-icon"></i>
-                <button type="button" class="filters-button">Familiale</button>
-            </div>
-
-            <div class="filters-wrap">
-                <i class="fas fa-heart filters-icon"></i>
-                <button type="button" class="filters-button">Romantique</button>
-            </div>
-
-            <div class="filters-wrap">
-                <i class="fas fa-dog filters-icon"></i>
-                <button type="button" class="filters-button">Animaux autorisés</button>
-            </div>
+            
         </section>
 
         <p id="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
@@ -180,7 +184,7 @@
                     </div>
                 </div>
 
-                <a href="" id="show-more"><strong>Afficher plus</strong></a>
+                <a href="" id="show-more">Afficher plus</a>
             </section>
             <aside id="host-popular">
                 <div id="host-title-flex">
