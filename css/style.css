@@ -163,11 +163,12 @@ section, .section-title {
 
 /** -- INFO -- **/
 #info {
+    display: inline-block;
     font-size: 12px;
     margin-bottom: 30px;
 }
 
-#info > i {
+#info-icon {
     width: 20px;
     height: 20px;
     display: inline-flex;
@@ -381,24 +382,34 @@ footer {
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
     main {
-        margin-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
         /* margin-right: 10px; */
     }
 
-    /** -- SEARCH -- **/
-
-    #search {
-        width: 100%;
+    .m-20 {
+        margin-left: 20px;
     }
+
+    /** -- SEARCH -- **/
+    .icon-wrap {
+        width: 100%
+    }
+
+    /* #search {
+        width: 100%;
+    } */
 
     #search-title {
         margin-bottom: 10px;
+        margin-left: 0px;
     }
 
     #search-input {
         width: 500px;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
+        /* border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px; */
+        border-right: none;
     }
 
     #search-button {
@@ -409,9 +420,8 @@ footer {
         display: inline-block;
         width: 52px;
         height: 52px;
-        /* position: absolute;
-        left: 76%;
-        top: 48.6%; */
+        position: relative;
+        left: -30%;
         font-family: 'Font Awesome\ 5 Free';
         content: '\f002';
         visibility: visible;
@@ -435,5 +445,67 @@ footer {
 
     .filters-wrap {
         margin-bottom: 10px;
+    }
+
+    #info-container {
+        display: flex;
+    }
+
+    #info {
+        width: 80%;
+    }
+
+
+    /** -- HOST -- **/
+    #host-popular-flex {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #host {
+        width: 100%;
+        flex: 1;
+        background-color: transparent;
+    }
+
+    .host-place {
+        width: 343px;
+    }
+
+    #host-popular {
+        width: 100%;
+        flex: 1;
+        border-radius: 0%;
+    }
+
+
+    /** -- ACTIVITES -- **/
+    #activities-flex {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .activities-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .activities-box-two {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    /** -- FOOTER -- **/
+    footer {
+        flex-direction: column;
+        padding: 30px 0 0 20px;
+    }
+
+    .footer-list {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }
