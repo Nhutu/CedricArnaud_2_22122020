@@ -296,6 +296,7 @@ section, .section-title {
     width: 40%;
     height: 90%;
     border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 
 .popular-stars {
