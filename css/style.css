@@ -439,12 +439,6 @@ footer {
 
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
-    main {
-        margin-left: 0px;
-        margin-right: 0px;
-        /* margin-right: 10px; */
-    }
-
     /* .m-20 {
         margin-left: 20px;
     } */
@@ -494,7 +488,7 @@ footer {
     }
 
     #filters-container {
-        max-width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -539,9 +533,13 @@ footer {
 
 
     /** -- ACTIVITES -- **/
+    #activities-section {
+        width: 90%;
+    }
+
     #activities-flex {
+        width: 100%;
         flex-direction: column;
-        margin-right: 20px;
     }
 
     .activities-box {
