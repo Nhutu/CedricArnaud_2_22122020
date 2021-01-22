@@ -53,17 +53,22 @@ nav {
 
 /** -- MAIN -- **/
 main {
-    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 50px; */
     margin-top: 50px;
 }
 
 section, .section-title {
+    /* width: 100%; */
     margin-bottom: 30px;
 }
 
 .section-title {
     padding-top: 30px;
-    margin-left: 25px;
+    padding-left: 20px;
+    /* margin-left: 25px; */
 }
 
 .link {
@@ -73,6 +78,13 @@ section, .section-title {
 
 
 /** -- SEARCH SECTION -- **/
+#search {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .icon-wrap {
     width: 420px;
     display: flex;
@@ -115,6 +127,11 @@ section, .section-title {
 }
 
 /** -- FILTERS SECTION -- **/
+#filters {
+    width: 90%;
+    align-self: center;
+}
+
 #filters-title {
     display: inline-block;
     margin-right: 30px;
@@ -162,6 +179,11 @@ section, .section-title {
 }
 
 /** -- INFO -- **/
+#info-container {
+    width: 90%;
+    align-self: center;
+}
+
 #info {
     display: inline-block;
     font-size: 12px;
@@ -182,12 +204,15 @@ section, .section-title {
 
 /** -- HOST -- **/
 #host-popular-flex {
+    width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
 }
 
 #host {
-    width: 880px;
+    width: 70%;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 40px;
@@ -201,7 +226,7 @@ section, .section-title {
 }
 
 .host-place {
-    width: 246px;
+    width: 30%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #cacaca;
@@ -256,25 +281,28 @@ section, .section-title {
 
 /** -- POPULAR HOSTS -- **/
 #host-popular {
-    width: 420px;
+    /* width: 420px; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
     height: 590px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
 #host-title-flex {
-    width: 80%;
+    width: 90%;
+    align-self: center;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    margin-left: 40px;
     margin-bottom: 30px;
 }
 
 .popular-place {
-    width: 343px;
+    width: 90%;
     height: 144px;
     display: flex;
     flex-direction: row;
@@ -304,6 +332,14 @@ section, .section-title {
 }
 
 /** -- ACTIVITIES -- **/
+#activities-section {
+    width: 90%;
+    align-self: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
 #activities-flex {
     display: flex;
     flex-direction: row;
@@ -352,9 +388,16 @@ section, .section-title {
 /** -- FOOTER -- **/
 footer {
     display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+#footer-container {
+    width: 90%;
+    align-self: center;
+    display: flex;
     flex-direction: row;
     padding: 50px 0 50px 50px;
-    background-color: #F2F2F2;
     margin: 0;
 }
 
@@ -378,7 +421,21 @@ footer {
     color: #0065FC;
 }
 
+/* @media (max-width: 1280px) {
+    #host {
+        width: 75%;
+    }
+    
+    .popular-place {
+        width: 95%;
+    }
+}
 
+@media (max-width: 1600px) {
+    #host {
+        width: 60%;
+    }
+} */
 
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
@@ -388,9 +445,9 @@ footer {
         /* margin-right: 10px; */
     }
 
-    .m-20 {
+    /* .m-20 {
         margin-left: 20px;
-    }
+    } */
 
     /** -- SEARCH -- **/
     .icon-wrap {
@@ -500,8 +557,12 @@ footer {
 
     /** -- FOOTER -- **/
     footer {
+    }
+
+    #footer-container {
+        width: auto;
+        align-self: flex-start;
         flex-direction: column;
-        padding: 30px 0 0 20px;
     }
 
     .footer-list {
