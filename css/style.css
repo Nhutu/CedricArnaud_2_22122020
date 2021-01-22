@@ -344,7 +344,6 @@ section, .section-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 50px;
     margin-top: 30px;
 }
 
@@ -567,5 +566,36 @@ footer {
         width: 100%;
         flex-direction: column;
         margin-bottom: 20px;
+    }
+}
+
+/** -- TABLETTE (portrait) -- **/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    #host {
+        margin-right: 15px;
+    }
+
+    .host-place {
+        width: 35%;
+    }
+
+    #host-popular {
+        width: 35%;
+        align-self: center;
+    }
+
+    .popular-description {
+        align-self: center;
+        padding-top: 0px;
+    }
+
+    .popular-stars {
+        line-height: 10px;
+    }
+
+    #activities-flex {
+        margin-right: 0px;
     }
 }
