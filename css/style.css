@@ -7,7 +7,6 @@
 
 /** -- HEADER -- **/
 nav {
-    width: 91%;
     padding: 0;
     margin: 0;
     display: inline-flex;
@@ -15,15 +14,20 @@ nav {
     justify-content: flex-end;
 }
 
-#menu {
+/* #menu {
     display: inline-block;
     list-style-type: none;
     text-align: center;
+} */
+
+#menu-container {
+    float: right;
+    margin-bottom: 60px;
 }
 
 .menu-item {
-    display: inline-block;
-    width: 167px;
+    /* display: inline-block; */
+    width: 130px;
     line-height: 100px;
     height: 50px;
     text-align: center;
@@ -40,6 +44,7 @@ nav {
 }
 
 #sign-in {
+    display: inline-block;
     font-weight: 700;
     color: #0065FC;
 }
@@ -443,6 +448,11 @@ footer {
 
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
+
+    #menu-container {
+        float: none;
+    }
+
     #logo-container {
         width: 35%;
         margin: 0;
@@ -602,8 +612,6 @@ footer {
 
 
     /** -- FOOTER -- **/
-    footer {
-    }
 
     #footer-container {
         width: auto;
@@ -618,12 +626,20 @@ footer {
     }
 }
 
-/** -- TABLETTE (portrait) -- **/
-@media (min-width: 768px) and (max-width: 1024px) {
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 812px) {
   
-    /* CSS */
+    /** -- HOST -- **/
+    #host-popular-flex {
+        flex-direction: column;
+    }
+    
     #host {
-        margin-right: 15px;
+        width: 100%;
     }
 
     .host-place {
@@ -631,20 +647,90 @@ footer {
     }
 
     #host-popular {
-        width: 35%;
-        align-self: center;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .popular-description {
-        align-self: center;
-        padding-top: 0px;
+        height: 200px;
+        align-self: normal;
     }
 
     .popular-stars {
-        line-height: 10px;
+        line-height: 50px;
+    }
+
+
+    /** -- ACTIVITES -- **/
+    #activities-section {
+        width: 90%;
     }
 
     #activities-flex {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .activities-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .activities-box-two {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/** -- TABLETTE (portrait) -- **/
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /** -- HOST -- **/
+    #host-popular-flex {
+        flex-direction: column;
+    }
+    
+    #host {
+        width: 100%;
+    }
+
+    .host-place {
+        width: 35%;
+    }
+
+    #host-popular {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .popular-description {
+        height: 200px;
+        align-self: normal;
+    }
+
+    .popular-stars {
+        line-height: 50px;
+    }
+
+
+    /** -- ACTIVITIES -- **/
+
+    #activities-flex {
         margin-right: 0px;
+    }
+
+    .activities-box {
+        height: 380px;
+    }
+
+    .activities-title {
+        padding-right: 10px;
+    }
+
+
+    /** -- FOOTER -- **/
+
+    .footer-list {
+        width: 30%;
     }
 }
