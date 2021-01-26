@@ -400,7 +400,7 @@ section, .section-title {
 }
 
 .activities-title {
-    padding: 12px;
+    padding: 10px;
     /*padding: 10  0 20px 20px;*/
 }
 
@@ -625,8 +625,7 @@ footer {
     /** -- FOOTER -- **/
 
     #footer-container {
-        width: auto;
-        align-self: flex-start;
+        width: 90%;
         flex-direction: column;
     }
 
