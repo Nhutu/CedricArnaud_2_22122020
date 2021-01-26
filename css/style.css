@@ -292,7 +292,7 @@ section, .section-title {
 /** -- POPULAR HOSTS -- **/
 #host-popular {
     /* width: 420px; */
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     height: 590px;
