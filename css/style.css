@@ -459,10 +459,6 @@ footer {
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
 
-    #menu-container {
-        float: none;
-    }
-
     #logo-container {
         width: 35%;
         margin: 0;
@@ -478,6 +474,8 @@ footer {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         align-items: flex-end;
+        float: none;
+        margin-bottom: 25px;
     }
 
     nav {
@@ -505,6 +503,10 @@ footer {
         line-height: 15px;
         text-align: right;
         padding-right: 20px;
+    }
+
+    main {
+        margin-top: 0;
     }
 
     /* .m-20 {
@@ -591,7 +593,7 @@ footer {
     }
 
     .host-place {
-        width: 343px;
+        width: 90%;
         margin-bottom: 15px;
     }
 
