@@ -126,6 +126,14 @@ section, .section-title {
     align-items: center;
 }
 
+#search-title {
+    margin-bottom: 5px;
+}
+
+#search-description {
+    font-size: 16px;
+}
+
 #search-button {
     width: 100px;
     height: 52px;
@@ -172,7 +180,7 @@ section, .section-title {
 .filters-button {
     width: auto;
     height: 40px;
-    padding-left: 25px;
+    padding-left: 30px;
     padding-right: 20px;
     background-color: transparent;
     border-color: #F2F2F2 #F2F2F2 #F2F2F2;
@@ -236,7 +244,7 @@ section, .section-title {
 }
 
 .host-place {
-    width: 30%;
+    width: 25%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #cacaca;
@@ -280,7 +288,8 @@ section, .section-title {
     display: block;
     text-decoration: none;
     margin-left: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
     color: black;
     font-weight: 800;
 }
@@ -391,7 +400,8 @@ section, .section-title {
 }
 
 .activities-title {
-    padding: 10px 0 20px 20px;
+    padding: 12px;
+    /*padding: 10  0 20px 20px;*/
 }
 
 /** -- FOOTER -- **/
@@ -406,7 +416,7 @@ footer {
     align-self: center;
     display: flex;
     flex-direction: row;
-    padding: 50px 0 50px 50px;
+    padding: 50px 0;
     margin: 0;
 }
 
@@ -416,7 +426,7 @@ footer {
 }
 
 .footer-title {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .footer-link {
