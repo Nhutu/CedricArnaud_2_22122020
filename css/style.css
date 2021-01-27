@@ -77,8 +77,8 @@ section, .section-title {
 
 .section-title {
     padding-top: 30px;
-    padding-left: 20px;
-    /* margin-left: 25px; */
+    /* padding-left: 20px; */
+    margin-left: 4%;
 }
 
 .link {
@@ -142,6 +142,7 @@ section, .section-title {
     border-radius: 0 20px 20px 0;
     color: white;
     font-weight: 700;
+    font-size: 15px;
 }
 
 /** -- FILTERS SECTION -- **/
@@ -287,7 +288,7 @@ section, .section-title {
 #show-more {
     display: block;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 4%;
     margin-bottom: 40px;
     margin-top: 10px;
     color: black;
@@ -318,6 +319,10 @@ section, .section-title {
     align-items: center;
     padding-top: 30px;
     margin-bottom: 30px;
+}
+
+#host-title-flex > i {
+    font-size: 20px;
 }
 
 .popular-place {
@@ -509,10 +514,6 @@ footer {
         margin-top: 0;
     }
 
-    /* .m-20 {
-        margin-left: 20px;
-    } */
-
     /** -- SEARCH -- **/
     .icon-wrap {
         width: 100%;
@@ -578,7 +579,6 @@ footer {
         margin-top: 6px;
     }
 
-
     /** -- HOST -- **/
     #host-popular-flex {
         flex-direction: column;
@@ -630,6 +630,10 @@ footer {
 
     .activities-img {
         height: 95px;
+    }
+
+    .activities-title {
+        padding: 15px;
     }
 
     .activities-box-two {
