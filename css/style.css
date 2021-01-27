@@ -661,12 +661,18 @@ footer {
     
     /** -- FILTERS -- **/
     #filters-container {
-        width: 80%;
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    .filters-wrap {
+        width: 35%;
     }
 
     .filters-button {
         width: 80%;
         padding-right: 10px;
+        margin-bottom: 10px;
     }
 
     /** -- HOST -- **/
