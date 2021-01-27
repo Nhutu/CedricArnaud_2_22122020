@@ -467,6 +467,10 @@ footer {
 /** -- RESPONSIVE MOBILE -- **/
 @media (max-width: 640px) {
 
+    #sign-in:active {
+        border-bottom: none!important;
+    }
+
     #logo-container {
         width: 35%;
         margin: 0;
