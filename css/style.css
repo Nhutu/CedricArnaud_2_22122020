@@ -682,6 +682,10 @@ footer {
         width: 35%;
     }
 
+    .host-title {
+        padding-bottom: 0;
+    }
+
     #host-popular {
         width: 100%;
         margin-bottom: 30px;
@@ -756,7 +760,7 @@ footer {
     }
 
     .activities-box {
-        height: 380px;
+        /* height: 380px; */
     }
 
     .activities-title {
