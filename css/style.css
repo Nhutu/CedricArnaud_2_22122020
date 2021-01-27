@@ -670,6 +670,11 @@ footer {
 
 @media (min-width: 481px) and (max-width: 812px) {
     
+    .menu-item:active {
+        border-top: 2px solid #0065FC!important;
+        color: #0065FC;
+    }
+
     /** -- FILTERS -- **/
     #filters-container {
         width: 70%;
@@ -741,6 +746,11 @@ footer {
 
 /** -- TABLETTE (portrait) -- **/
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .menu-item:active {
+        border-top: 2px solid #0065FC!important;
+        color: #0065FC;
+    }
 
     /** -- HOST -- **/
     #host-popular-flex {
